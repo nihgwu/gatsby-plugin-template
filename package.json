@@ -1,0 +1,23 @@
+{
+  "name": "gatsby-plugin-template",
+  "description": "Gatsby template plugin for code",
+  "version": "0.1.0",
+  "author": "Neo Nie <nihgwu@live.com>",
+  "homepage": "https://github.com/nihgwu/gatsby-plugin-template",
+  "repository": "https://github.com/nihgwu/gatsby-plugin-template",
+  "bugs": {
+    "url": "https://github.com/nihgwu/gatsby-plugin-template/issues"
+  },
+  "license": "MIT",
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "template",
+    "code"
+  ],
+  "dependencies": {
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
