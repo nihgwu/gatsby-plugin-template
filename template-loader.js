@@ -1,12 +1,10 @@
 const fs = require('fs')
 
-function escape(str) {
-  return str.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&')
-}
-
-function compile(template, source, regexp) {
-  let content = ''
+function compile(template, source, placeholder) {
+  const escaped = placeholder.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&')
+  const regexp = new RegExp('( *)' + escaped, 'g')
   const result = regexp.exec(template)
+  let content = ''
   if (result) {
     const [, indent] = result
     content += template.substring(0, result.index)
@@ -28,7 +26,6 @@ module.exports = function(source) {
   const { template: filePath, placeholder } = this.query
 
   const template = fs.readFileSync(filePath, 'utf8')
-  const regexp = new RegExp('( *)' + escape(placeholder), 'g')
 
-  return compile(template, source, regexp)
+  return compile(template, source, placeholder)
 }
