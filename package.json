@@ -1,7 +1,7 @@
 {
   "name": "gatsby-plugin-template",
   "description": "Gatsby template plugin for code",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "Neo Nie <nihgwu@live.com>",
   "homepage": "https://github.com/nihgwu/gatsby-plugin-template",
   "repository": "https://github.com/nihgwu/gatsby-plugin-template",
