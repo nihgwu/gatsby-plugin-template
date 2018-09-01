@@ -2,9 +2,9 @@ const path = require('path')
 
 exports.onCreateWebpackConfig = ({ actions }, pluginOptions) => {
   const { test, template, placeholder } = pluginOptions
-  if (!test || !template || !placeholder) {
+  if (!test || !template) {
     throw new Error(
-      '"test", "template", "placeholder" are required options for "gatsby-plugin-template"'
+      '"test", "template" are required options for "gatsby-plugin-template"'
     )
   }
   actions.setWebpackConfig({
@@ -14,9 +14,9 @@ exports.onCreateWebpackConfig = ({ actions }, pluginOptions) => {
           test,
           use: [
             {
-              loader: path.resolve(__dirname, 'template-loader.js'),
+              loader: 'partial-loader',
               options: {
-                template,
+                templatePath: template,
                 placeholder,
               },
             },

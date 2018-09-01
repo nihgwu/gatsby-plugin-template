@@ -15,7 +15,12 @@
     "template",
     "code"
   ],
+  "files": [
+    "index.js",
+    "gatsby-node.js"
+  ],
   "dependencies": {
+    "partial-loader": "^0.0.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

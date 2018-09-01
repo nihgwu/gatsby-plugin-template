@@ -28,8 +28,8 @@ module.exports = {
 ### Options
 
 * `test` - _required_, regexp identifies which files should be transformed.
-* `template` - _required_, template file path.
-* `placeholder` - _required_, placeholder to be replaced.
+* `template` - _required_, absolute path of the template file.
+* `placeholder` - placeholder to be replaced, defaults to `/*** placeholder ***/`
 
 ## Example
 
