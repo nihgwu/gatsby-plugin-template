@@ -20,7 +20,7 @@
     "gatsby-node.js"
   ],
   "dependencies": {
-    "partial-loader": "^0.0.1"
+    "loader-utils": "^1.1.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

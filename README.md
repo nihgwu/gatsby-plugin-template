@@ -27,9 +27,11 @@ module.exports = {
 
 ### Options
 
-* `test` - _required_, regexp identifies which files should be transformed.
-* `template` - _required_, absolute path of the template file.
-* `placeholder` - placeholder to be replaced, defaults to `/*** placeholder ***/`
+- `test` (_regexp_) - _required_, regexp identifies which files should be transformed.
+- `template` (_string_) - _required_, absolute path of the template file.
+- `placeholder` (_string_) - placeholder to be replaced, defaults to `/*** placeholder ***/`.
+- `exportResult` (_string | boolean_) - export the transformed content as provided name, defautls to `false`.
+- `exportRaw` (_string | boolean_) - export the raw content as provided name, defautls to `false`.
 
 ## Example
 

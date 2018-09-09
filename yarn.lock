@@ -21,9 +21,3 @@ loader-utils@^1.1.0:
     big.js "^3.1.3"
     emojis-list "^2.0.0"
     json5 "^0.5.0"
-
-partial-loader@^0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/partial-loader/-/partial-loader-0.0.1.tgz#7c87a8661a090e7f493795a749ad82b9ea1c895b"
-  dependencies:
-    loader-utils "^1.1.0"
