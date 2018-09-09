@@ -1,10 +1,10 @@
 {
   "name": "gatsby-plugin-template",
   "description": "Gatsby template plugin for code",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "author": "Neo Nie <nihgwu@live.com>",
   "homepage": "https://github.com/nihgwu/gatsby-plugin-template",
-  "repository": "https://github.com/nihgwu/gatsby-plugin-template",
+  "repository": "https://github.com/nihgwu/gatsby-plugin-template.git",
   "bugs": {
     "url": "https://github.com/nihgwu/gatsby-plugin-template/issues"
   },
@@ -17,7 +17,8 @@
   ],
   "files": [
     "index.js",
-    "gatsby-node.js"
+    "gatsby-node.js",
+    "template-loader.js"
   ],
   "dependencies": {
     "loader-utils": "^1.1.0"
